@@ -160,6 +160,18 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
+-- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE ar_internal_metadata (
+    key character varying NOT NULL,
+    value character varying,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
 -- Name: sal7711_gen_articulo; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -857,6 +869,14 @@ ALTER TABLE ONLY sip_anexo
 
 
 --
+-- Name: ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY ar_internal_metadata
+    ADD CONSTRAINT ar_internal_metadata_pkey PRIMARY KEY (key);
+
+
+--
 -- Name: etiqueta_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -1283,59 +1303,6 @@ ALTER TABLE ONLY sip_ubicacion
 
 SET search_path TO "$user",public;
 
-INSERT INTO schema_migrations (version) VALUES ('20150413160156');
+INSERT INTO schema_migrations (version) VALUES ('20150413160156'), ('20150413160157'), ('20150413160158'), ('20150413160159'), ('20150416074423'), ('20150503110048'), ('20150503120915'), ('20150510125926'), ('20150510130031'), ('20150521181918'), ('20150528100944'), ('20150603181900'), ('20150604101858'), ('20150604102321'), ('20150604155923'), ('20150702224217'), ('20150707164448'), ('20150710114451'), ('20150717101243'), ('20150724003736'), ('20150803082520'), ('20150809032138'), ('20151020203421'), ('20151030154449'), ('20151030154458'), ('20151030181131'), ('20160518025044'), ('20160519195544');
 
-INSERT INTO schema_migrations (version) VALUES ('20150413160157');
-
-INSERT INTO schema_migrations (version) VALUES ('20150413160158');
-
-INSERT INTO schema_migrations (version) VALUES ('20150413160159');
-
-INSERT INTO schema_migrations (version) VALUES ('20150416074423');
-
-INSERT INTO schema_migrations (version) VALUES ('20150503110048');
-
-INSERT INTO schema_migrations (version) VALUES ('20150503120915');
-
-INSERT INTO schema_migrations (version) VALUES ('20150510125926');
-
-INSERT INTO schema_migrations (version) VALUES ('20150510130031');
-
-INSERT INTO schema_migrations (version) VALUES ('20150521181918');
-
-INSERT INTO schema_migrations (version) VALUES ('20150528100944');
-
-INSERT INTO schema_migrations (version) VALUES ('20150603181900');
-
-INSERT INTO schema_migrations (version) VALUES ('20150604101858');
-
-INSERT INTO schema_migrations (version) VALUES ('20150604102321');
-
-INSERT INTO schema_migrations (version) VALUES ('20150604155923');
-
-INSERT INTO schema_migrations (version) VALUES ('20150702224217');
-
-INSERT INTO schema_migrations (version) VALUES ('20150707164448');
-
-INSERT INTO schema_migrations (version) VALUES ('20150710114451');
-
-INSERT INTO schema_migrations (version) VALUES ('20150717101243');
-
-INSERT INTO schema_migrations (version) VALUES ('20150724003736');
-
-INSERT INTO schema_migrations (version) VALUES ('20150803082520');
-
-INSERT INTO schema_migrations (version) VALUES ('20150809032138');
-
-INSERT INTO schema_migrations (version) VALUES ('20151020203421');
-
-INSERT INTO schema_migrations (version) VALUES ('20151030154449');
-
-INSERT INTO schema_migrations (version) VALUES ('20151030154458');
-
-INSERT INTO schema_migrations (version) VALUES ('20151030181131');
-
-INSERT INTO schema_migrations (version) VALUES ('20160518025044');
-
-INSERT INTO schema_migrations (version) VALUES ('20160519195544');
 
