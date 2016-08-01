@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   #get "/actos/eliminar" => 'sal7711_web/actos#eliminar'
   
   root 'sip/hogar#index'
-  mount Sal7711Sjr::Engine, at: "/", as: "sal7711_web"
+  mount Sal7711Web::Engine, at: "/", as: "sal7711_web"
   mount Sal7711Gen::Engine, at: "/", as: "sal7711_gen"
   mount Sip::Engine, at: "/", as: "sip"
 

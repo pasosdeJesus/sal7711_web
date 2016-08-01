@@ -2,9 +2,9 @@
 
 require 'sal7711_gen/engine'
 
-module Sal7711Sjr
+module Sal7711Web
   class Engine < ::Rails::Engine
-    isolate_namespace Sal7711Sjr
+    isolate_namespace Sal7711Web
 
     config.generators do |g|
       g.test_framework      :minitest, spec:true, :fixture => false

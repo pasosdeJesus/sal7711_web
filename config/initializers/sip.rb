@@ -7,5 +7,5 @@ Sip.setup do |config|
       if !ENV["HEROKU_POSTGRESQL_GREEN_URL"].nil?
         config.ruta_anexos = "#{Rails.root}/tmp/"
       end
-      config.titulo = "Sal7711 - SJR " + Sal7711Gen::VERSION
+      config.titulo = "Sal7711 - WEB " + Sal7711Gen::VERSION
 end

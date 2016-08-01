@@ -1,11 +1,12 @@
 # encoding: UTF-8
 
-require 'sal7711_web/concerns/models/articulo'
+require 'sal7711_gen/concerns/models/articulo'
 
 module Sal7711Gen
   class Articulo < ActiveRecord::Base
-    include Sal7711Sjr::Concerns::Models::Articulo
+    include Sal7711Gen::Concerns::Models::Articulo
 
-    validates :pagina, presence: false, length: { maximum: 20 }
+    #validates :pagina, absence: true
+    # se intento tambien validates :pagine , presence: false
   end
 end

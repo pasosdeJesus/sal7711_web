@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-module Sal7711Sjr
+module Sal7711Web
 	class Ability  < Sip::Ability
 
     BASICAS_PROPIAS = [

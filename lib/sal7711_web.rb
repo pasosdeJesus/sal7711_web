@@ -1,4 +1,4 @@
 require "sal7711_web/engine"
 
-module Sal7711Sjr
+module Sal7711Web
 end

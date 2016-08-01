@@ -1,16 +1,15 @@
 GIT
-  remote: git://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 1349d03cb63285dfc13e2a738e38276e20c438e7
-  specs:
-    sal7711_gen (1.0.b1)
-      rails
-      sip
-
-GIT
   remote: git://github.com/vtamara/cocoon.git
   revision: 20f8f3bab2fee21309c57b586f5fab9921ac0894
   specs:
     cocoon (1.2.6)
+
+PATH
+  remote: ../sal7711_gen
+  specs:
+    sal7711_gen (1.0.b1)
+      rails
+      sip
 
 PATH
   remote: ../sip
@@ -79,6 +78,7 @@ GEM
     bootstrap-datepicker-rails (1.6.1.1)
       railties (>= 3.0)
     builder (3.2.2)
+    byebug (9.0.5)
     callsite (0.0.11)
     camertron-eprun (1.1.0)
     cancancan (1.15.0)
@@ -356,6 +356,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   bootstrap-datepicker-rails
+  byebug
   cancancan
   capybara
   chosen-rails

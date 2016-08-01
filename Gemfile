@@ -77,8 +77,8 @@ gem "tzinfo-data"
 gem 'sip', path: '../sip'
 
 # Motor de Sal7711
-gem 'sal7711_gen', github: 'pasosdeJesus/sal7711_gen'
-#gem 'sal7711_gen', path: '../sal7711_gen'
+#gem 'sal7711_gen', github: 'pasosdeJesus/sal7711_gen'
+gem 'sal7711_gen', path: '../sal7711_gen'
 
 group :doc do
     # Genera documentación en doc/api con bundle exec rake doc:rails
@@ -88,7 +88,7 @@ end
 # Los siguientes son para desarrollo o para pruebas con generadores
 group :development do
   # Depurar
-  #gem 'byebug'
+  gem 'byebug'
 
   # Consola irb en páginas con excepciones o usando <%= console %> en vistas
   gem 'web-console'
