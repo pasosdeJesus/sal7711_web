@@ -10,7 +10,9 @@ module Sal7711Web
         include Sal7711Gen::Concerns::Models::Articulo
 
         included do
-          byebug
+          belongs_to :pais, foreign_key: 'pais_id', validate: true,
+            class_name: 'Sip::Pais'
+
           validates :pagina, presence: false, length: { maximum: 20 } 
         end
 
