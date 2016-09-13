@@ -26,6 +26,10 @@ module Dummy
 
     config.active_record.schema_format = :sql
 
+    config.x.formato_fecha = 'yyyy-mm-dd'
+
+    config.x.url_colchon = 'colchon-articulos'
+
     FactoryGirl.definition_file_paths << Pathname.new("../factories") 
     FactoryGirl.definition_file_paths.uniq! 
     FactoryGirl.find_definitions
