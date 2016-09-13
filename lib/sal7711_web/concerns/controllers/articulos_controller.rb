@@ -24,7 +24,7 @@ module Sal7711Web
               :departamento_id, 
               :municipio_id, 
               :fuenteprensa_id, 
-              :fecha, 
+              :fecha_localizada, 
               #        :pagina,
               :url,
               :texto,
