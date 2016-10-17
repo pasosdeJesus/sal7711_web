@@ -11,10 +11,24 @@ module Sal7711Web
 
         included do
 
-          def create
-            @articulo = Sal7711Gen::Articulo.new(articulo_params)
-            @articulo.adjunto_descripcion = gen_descripcion(articulo_params)
+          def gen_descripcion_pagina_bd(articulo)
+            return ""
+          end
+
+          def ordena_articulo
+            @articulo.adjunto_descripcion = gen_descripcion_bd(@articulo)
             @articulo.pagina = 'X'
+            @articulo.save
+          end
+
+
+          # POST /articulos
+          # POST /articulos.json
+          def create
+            authorize! :edit, Sal7711Gen::Articulo
+            @articulo = Sal7711Gen::Articulo.new(articulo_params)
+            @articulo.adjunto_descripcion = 'J'
+            @articulo.pagina = 'J'
             create_gen(@articulo)
           end
 
