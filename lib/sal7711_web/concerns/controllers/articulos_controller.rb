@@ -16,7 +16,8 @@ module Sal7711Web
           end
 
           def ordena_articulo
-            @articulo.adjunto_descripcion = gen_descripcion_bd(@articulo)
+            @articulo.adjunto_descripcion = 
+              Sal7711Gen::ArticulosController.gen_descripcion_bd(@articulo)
             @articulo.pagina = 'X'
             @articulo.save
           end
