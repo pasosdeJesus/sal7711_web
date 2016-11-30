@@ -5,7 +5,7 @@
 #
 
 #//= require sal7711_gen/motor
-#//= require jquery-ui/autocomplete
+#//= require jquery-ui/widgets/autocomplete
 #//= require cocoon
 
 @sal7711_web_prepara_eventos_comunes = (root) ->
