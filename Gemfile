@@ -73,12 +73,12 @@ gem "tzinfo"
 gem "tzinfo-data"
 
 # Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
-#gem 'sip', path: '../sip'
+#gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
+gem 'sip', path: '../sip'
 
 # Motor de Sal7711
-gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
-#gem 'sal7711_gen', path: '../sal7711_gen'
+#gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
+gem 'sal7711_gen', path: '../sal7711_gen'
 
 group :doc do
     # Genera documentación en doc/api con bundle exec rake doc:rails
