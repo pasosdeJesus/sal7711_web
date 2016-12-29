@@ -11,6 +11,9 @@ gem "pg"
 
 gem 'puma'
 
+# Mientras solucionan https://github.com/sparklemotion/nokogiri/issues/1569
+gem 'nokogiri', '1.6.8.1' 
+
 # Colores en consola
 gem "colorize"
 
@@ -79,11 +82,6 @@ gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
 # Motor de Sal7711
 gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
 #gem 'sal7711_gen', path: '../sal7711_gen'
-
-group :doc do
-    # Genera documentación en doc/api con bundle exec rake doc:rails
-    gem "sdoc", require: false
-end
 
 # Los siguientes son para desarrollo o para pruebas con generadores
 group :development do
