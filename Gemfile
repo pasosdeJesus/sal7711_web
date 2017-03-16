@@ -98,11 +98,8 @@ group :test do
   # Envia resultados de pruebas desde travis a codeclimate
   gem "codeclimate-test-reporter"
 
-  # Pruebas con rspec
-  gem 'spring-commands-rspec'
-  gem 'rspec-rails'
-
-  gem 'rails-controller-testing'
+  gem "connection_pool"
+  gem "minitest-reporters" 
 
   # Maneja datos de prueba
   gem "factory_girl_rails", group: [:development, :test]
@@ -111,14 +108,6 @@ group :test do
   # Lanza programas para examinar resultados
   gem "launchy"
 
-  # Pruebas de regresión que no requieren javascript
-  gem "capybara"
-  
-  # Pruebas de regresión que requieren javascript
-  #gem "capybara-webkit", '1.4.1'
-
-  # Envia resultados de pruebas desde travis a codeclimate
-  #gem "codeclimate-test-reporter", require: nil
   # Para examinar errores, usar "rescue rspec" en lugar de "rspec"
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
