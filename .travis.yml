@@ -13,7 +13,7 @@ before_install:
         - sudo locale-gen --no-archive es_CO.UTF-8
         - sudo /etc/init.d/postgresql stop
         - sudo /etc/init.d/postgresql start 9.3
-        - cd spec/dummy
+        - cd test/dummy
         - psql -c 'CREATE DATABASE sal7711web_pru;' -U postgres
         - bundle install
         - cp db/structure.sql db/structure.sql.conlock
