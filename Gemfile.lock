@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: bc2a45e5e003c222996bb16866419924b3c2f78f
+  revision: de5bac2922809d4014742054a43e913624f63109
   specs:
     sal7711_gen (1.0.b1)
       rails
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 1a1999ab0a202c296d7d2d9092d2c0fac3a4a751
+  revision: 22931da655c3ab887753f4f95662f37d08e9cab5
   specs:
     sip (2.0.b2)
       bootstrap-datepicker-rails
@@ -99,6 +99,8 @@ GEM
     climate_control (0.1.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
+    codeclimate-test-reporter (1.0.7)
+      simplecov
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -111,7 +113,7 @@ GEM
     commonjs (0.2.7)
     concurrent-ruby (1.0.5)
     debug_inspector (0.0.2)
-    devise (4.2.0)
+    devise (4.2.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.1)
@@ -119,6 +121,7 @@ GEM
       warden (~> 1.2.3)
     devise-i18n (1.1.1)
     diff-lcs (1.3)
+    docile (1.1.5)
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.8.0)
@@ -141,6 +144,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
+    json (2.0.3)
     kgio (2.11.0)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -177,11 +181,11 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
-    pdf-core (0.6.1)
-    pg (0.19.0)
-    prawn (2.1.0)
-      pdf-core (~> 0.6.1)
-      ttfunk (~> 1.4.0)
+    pdf-core (0.7.0)
+    pg (0.20.0)
+    prawn (2.2.1)
+      pdf-core (~> 0.7.0)
+      ttfunk (~> 1.5)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -193,7 +197,7 @@ GEM
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
     public_suffix (2.0.5)
-    puma (3.7.1)
+    puma (3.8.2)
     rack (2.0.1)
     rack-contrib (1.2.0)
       rack (>= 0.9.1)
@@ -265,6 +269,11 @@ GEM
     simple_form (3.4.0)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
+    simplecov (0.14.0)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     slop (3.6.0)
     spring (2.0.1)
       activesupport (>= 4.2)
@@ -280,7 +289,7 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.6)
-    ttfunk (1.4.0)
+    ttfunk (1.5.0)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
@@ -297,7 +306,7 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2017.1)
       tzinfo (>= 1.0.0)
-    uglifier (3.1.5)
+    uglifier (3.1.7)
       execjs (>= 0.3.0, < 3)
     unicorn (5.2.0)
       kgio (~> 2.6)
@@ -326,6 +335,7 @@ DEPENDENCIES
   capybara
   chosen-rails
   cocoon!
+  codeclimate-test-reporter
   coffee-rails
   colorize
   devise
@@ -352,6 +362,7 @@ DEPENDENCIES
   sass
   sass-rails
   simple_form
+  simplecov
   sip!
   spring
   spring-commands-rspec
