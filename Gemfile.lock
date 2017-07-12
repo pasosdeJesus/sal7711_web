@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 1f8612c3c40236e66d6b728580f58c51b17f06d8
+  revision: ba6ad10b9ac909a110e27f8472bb9463abd05444
   specs:
     sal7711_gen (1.0.b1)
       rails
@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 9b2865435b06c1ec4eaacd476431abde67fd36ef
+  revision: d1f6332e94765ceb13e058b147f7ca037dd7817f
   specs:
     sip (2.0.b3)
       bootstrap-datepicker-rails
@@ -96,8 +96,6 @@ GEM
     climate_control (0.2.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
-    codeclimate-test-reporter (1.0.8)
-      simplecov (<= 0.13)
     coderay (1.1.1)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -252,7 +250,7 @@ GEM
     simple_form (3.5.0)
       actionpack (> 4, < 5.2)
       activemodel (> 4, < 5.2)
-    simplecov (0.13.0)
+    simplecov (0.14.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
@@ -313,7 +311,6 @@ DEPENDENCIES
   cancancan
   chosen-rails
   cocoon!
-  codeclimate-test-reporter
   coffee-rails
   colorize
   connection_pool
