@@ -1,8 +1,8 @@
 language: ruby
 rvm:
         - 2.4.0
-addons:
-        postgresql: "9.6"
+addon:
+        postgresql: '9.6'
 notifications:
         email: false
 script: bundle exec rails test
