@@ -71,11 +71,11 @@ gem "tzinfo"
 gem "tzinfo-data"
 
 # Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git', branch: :us_modelo
+gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
 #gem 'sip', path: '../sip'
 
 # Motor de Sal7711
-gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git', branch: :us_modelo
+gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
 #gem 'sal7711_gen', path: '../sal7711_gen'
 
 # Los siguientes son para desarrollo o para pruebas con generadores
