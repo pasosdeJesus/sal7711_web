@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
 # Rails (internacionalización)
-gem "rails", '~> 5.1.0'
+gem "rails", '~> 5.2.0'
+
 gem "rails-i18n"
+
+gem 'bootsnap', '>=1.1.0', require: false
 
 # Postgresql
 gem "pg"#, '~> 0.21'
