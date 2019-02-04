@@ -35,5 +35,7 @@ module Dummy
     config.x.sal7711_presencia_fuenteprensa = true
     config.x.sal7711_presencia_fecha = true
     config.x.sal7711_presencia_pagina = false
+
+    config.relative_url_root = '/sal7711'
   end
 end
