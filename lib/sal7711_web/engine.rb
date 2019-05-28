@@ -26,10 +26,6 @@ module Sal7711Web
 
     # Adaptado de http://guides.rubyonrails.org/engines.html
     config.to_prepare do |app|
-#      Dir.glob(Engine.root.to_s + "/app/decorators/**/*_decorator*.rb").each do |c|
-#        puts "engine decorator #{c}"
-#        require_dependency(c)
-#      end
       Dir.glob(Rails.root + "app/decorators/**/*_decorator*.rb").each do |c|
         require_dependency(c)
       end

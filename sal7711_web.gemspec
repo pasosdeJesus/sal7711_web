@@ -1,4 +1,5 @@
-$:.push File.expand_path("../lib", __FILE__)
+# enconding: UTF-8
+#$:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
 require "sal7711_web/version"
