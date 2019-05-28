@@ -2,7 +2,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require_relative "sal7711_web/version"
+require "sal7711_web/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
