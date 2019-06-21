@@ -37,7 +37,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 
 # jquery como librería JavaScript
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.4'
 
 gem 'jquery-ui-rails'
 
