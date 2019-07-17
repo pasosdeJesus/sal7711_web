@@ -79,11 +79,11 @@ gem 'paperclip'
 gem 'tzinfo'
 
 # Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git', branch: :temas
+gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
 #gem 'sip', path: '../sip',
 
 # Motor de Sal7711
-gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git', branch: :temas
+gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
 #gem 'sal7711_gen', path: '../sal7711_gen'
 
 # Los siguientes son para desarrollo o para pruebas con generadores
