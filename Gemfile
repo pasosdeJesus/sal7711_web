@@ -37,7 +37,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 
 # jquery como librería JavaScript
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.5'
 
 gem 'jquery-ui-rails'
 
@@ -50,7 +50,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-rails'
 
 # Facilita elegir colores en tema
-gem 'pick-a-color-rails'
+gem 'pick-a-color-rails', '>= 0.0.1'
 gem 'tiny-color-rails'
 
 # Formularios simples 
