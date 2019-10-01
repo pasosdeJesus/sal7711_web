@@ -1,124 +1,106 @@
 source 'https://rubygems.org'
 
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+gemspec
+
+
+gem 'bcrypt'
+
+gem 'bigdecimal'
+
+gem 'bootsnap', '>=1.1.0', require: false
+
+gem 'bootstrap-datepicker-rails'
+
+gem 'cancancan'
+
+gem 'chosen-rails', git: 'https://github.com/vtamara/chosen-rails.git', branch: 'several-fixes' # Cuadros de selección para búsquedas
+
+gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git', branch: 'new_id_with_ajax' # Formularios anidados (algunos con ajax)
+
+gem 'coffee-rails' # CoffeeScript para recuersos .js.coffee y vistas
+
+gem 'colorize' # Colores en consola
+
+gem 'devise' # Autenticación 
+
+gem 'devise-i18n'
+
+gem 'font-awesome-rails'
+
+gem 'jbuilder' # API JSON facil. 
+
+gem 'jquery-rails' # jquery como librería JavaScript
+
+gem 'jquery-ui-rails'
+
+gem 'prawn' # Para generar PDF
+
+gem 'paperclip' # Maneja adjuntos
+
+gem 'pg' # Postgresql
+
+gem 'pick-a-color-rails' # Facilita elegir colores en tema
+
+gem 'puma'
+
 gem 'rails', '6.0.0.rc1'
 
 gem 'rails-i18n'
 
-gem 'bootsnap', '>=1.1.0', require: false
+gem 'sass-rails' # Para generar CSS
 
-gem 'bigdecimal'
-
-# Postgresql
-gem 'pg'#, '~> 0.21'
-
-gem 'puma'
-
-# Colores en consola
-gem 'colorize'
-
-# Para generar CSS
-gem 'sass-rails'
-
-gem 'webpacker'
-
-# Cuadros de selección para búsquedas
-gem 'chosen-rails', git: 'https://github.com/vtamara/chosen-rails.git', branch: 'several-fixes'
-
-# Para generar PDF
-gem 'prawn'
-
-# API JSON facil. Ver: https://github.com/rails/jbuilder
-gem 'jbuilder'
-
-# Uglifier comprime recursos Javascript
-gem 'uglifier'
-
-# CoffeeScript para recuersos .js.coffee y vistas
-gem 'coffee-rails'
-
-# jquery como librería JavaScript
-gem 'jquery-rails'
-
-gem 'jquery-ui-rails'
-
-# Seguir enlaces más rápido. Ver: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
-# Ambiente de CSS
-gem 'twitter-bootstrap-rails'
-gem 'bootstrap-datepicker-rails'
-gem 'font-awesome-rails'
-
-# Facilita elegir colores en tema
-gem 'pick-a-color-rails'
-gem 'tiny-color-rails'
-
-# Formularios simples 
-gem 'simple_form'
-
-# Formularios anidados (algunos con ajax)
-gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git', branch: 'new_id_with_ajax'
-
-
-# Autenticación y roles
-gem 'devise'
-gem 'devise-i18n'
-gem 'cancancan'
-gem 'bcrypt'
-
-# Listados en páginas
-gem 'will_paginate'
-
-# ICU con CLDR
-gem 'twitter_cldr'
-
-# Maneja adjuntos
-gem 'paperclip'
-
-# Zonas horarias
-gem 'tzinfo'
-
-# Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
-#gem 'sip', path: '../sip',
+gem 'simple_form' # Formularios simples 
 
 # Motor de Sal7711
 gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
 #gem 'sal7711_gen', path: '../sal7711_gen'
 
-# Los siguientes son para desarrollo o para pruebas con generadores
-group :development do
-  # Depurar
-  #gem 'byebug'
+# Motor de sistemas de información estilo Pasos de Jesús
+gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
+#gem 'sip', path: '../sip',
 
-  # Consola irb en páginas con excepciones o usando <%= console %> en vistas
-  gem 'web-console'
+gem 'tiny-color-rails'
+
+gem 'turbolinks' # Seguir enlaces más rápido. 
+
+gem 'twitter-bootstrap-rails' # Ambiente de CSS
+
+gem 'twitter_cldr' # ICU con CLDR
+
+gem 'tzinfo' # Zonas horarias
+
+gem 'uglifier' # Uglifier comprime recursos Javascript
+
+gem 'webpacker'
+
+gem 'will_paginate' # Listados en páginas
+
+
+group :development do
+  
+  #gem 'byebug' # Depurar
+  
+  gem 'web-console' # Consola irb en páginas 
+
 end
 
-# Los siguientes son para pruebas y no tiene generadores requeridos en desarrollo
+
 group :test do
-  # Acelera ejecutando en fondo.  https://github.com/jonleighton/spring
-  gem 'spring'
+
+  gem 'meta_request'
 
   gem 'simplecov'
 
-  # https://www.relishapp.com/womply/rails-style-guide/docs/developing-rails-applications/bundler
-  # Lanza programas para examinar resultados
-  gem 'launchy'
+  gem 'spring' # Acelera ejecutando en fondo.  https://github.com/jonleighton/spring
 
-  gem 'pry-rescue'
-  gem 'pry-stack_explorer'
-
-  gem 'meta_request'
 end
 
 
 group :production do
-  # Para despliegue
-  gem 'unicorn'
+  
+  gem 'unicorn' # Para despliegue
 
-  # Requerido por heroku para usar stdout como bitacora
-  gem 'rails_12factor'
 end
-
 
