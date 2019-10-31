@@ -11,8 +11,6 @@ gem 'bigdecimal'
 
 gem 'bootsnap', '>=1.1.0', require: false
 
-gem 'bootstrap-datepicker-rails'
-
 gem 'cancancan'
 
 gem 'chosen-rails', git: 'https://github.com/vtamara/chosen-rails.git', branch: 'several-fixes' # Cuadros de selección para búsquedas
@@ -56,8 +54,6 @@ gem 'simple_form' # Formularios simples
 gem 'tiny-color-rails'
 
 gem 'turbolinks' # Seguir enlaces más rápido. 
-
-gem 'twitter-bootstrap-rails' # Ambiente de CSS
 
 gem 'twitter_cldr' # ICU con CLDR
 
