@@ -53,14 +53,6 @@ gem 'sass-rails' # Para generar CSS
 
 gem 'simple_form' # Formularios simples 
 
-# Motor de Sal7711
-gem 'sal7711_gen', git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
-#gem 'sal7711_gen', path: '../sal7711_gen'
-
-# Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
-#gem 'sip', path: '../sip',
-
 gem 'tiny-color-rails'
 
 gem 'turbolinks' # Seguir enlaces más rápido. 
@@ -76,6 +68,19 @@ gem 'uglifier' # Uglifier comprime recursos Javascript
 gem 'webpacker'
 
 gem 'will_paginate' # Listados en páginas
+
+
+#####
+# Motores que se sobrecargan vistas (deben ponerse en orden de apilamiento 
+# lógico y no alfabetico como las gemas anteriores) 
+
+gem 'sip', # Motor generico
+  git: 'https://github.com/pasosdeJesus/sip.git', branch: :bs4
+#gem 'sip', path: '../sip'
+
+gem 'sal7711_gen',  # Motor de archivo de prensa generico
+  git: 'https://github.com/pasosdeJesus/sal7711_gen.git', branch: :bs4
+#gem 'sal7711_gen', path: '../sal7711_gen'
 
 
 group :development do
