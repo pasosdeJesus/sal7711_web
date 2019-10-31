@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 555df25851a6f90fbd705b5b22196dd849ad464a
-  branch: bs4
+  revision: e9f88c0cd1abe34e127482033095e384fa46ecf0
   specs:
     sal7711_gen (1.0.b2)
       rails
@@ -9,10 +8,10 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: bfee41829fe25a02b9a1147ef840d40bdeeaa13a
-  branch: bs4
+  revision: 4525a5d46328b81dd013419939d0d1cf63ed7175
   specs:
     sip (2.0.b6)
+      bootstrap-datepicker-rails
       cancancan
       chosen-rails
       colorize
@@ -25,6 +24,7 @@ GIT
       rails
       rails-i18n
       simple_form
+      twitter-bootstrap-rails
       twitter_cldr
       will_paginate
 
