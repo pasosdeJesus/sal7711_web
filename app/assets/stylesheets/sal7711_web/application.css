@@ -10,7 +10,6 @@
  *
  *= require_self
  *= require jquery-ui
- *= require bootstrap-datepicker
  *= require sal7711_gen/application
  *= require_tree .
  */
