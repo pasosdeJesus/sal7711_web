@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: d0933d55b11caf091020908fcaebd113859d7a13
+  revision: 521e6ba3732f394e19e10a7866fce02562034adf
   branch: bs4
   specs:
     sal7711_gen (1.0.b2)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 75cd409260aa0724f949b2259c0cbe108c0a495a
+  revision: 04c249fc370a254d2730ae31abe0a653ade7023a
   branch: bs4
   specs:
     sip (2.0.b7)
@@ -139,7 +139,7 @@ GEM
     docile (1.3.2)
     erubi (1.9.0)
     execjs (2.7.0)
-    ffi (1.11.1)
+    ffi (1.11.2)
     font-awesome-rails (4.7.0.5)
       railties (>= 3.2, < 6.1)
     globalid (0.4.2)
@@ -194,7 +194,7 @@ GEM
     prawn (2.2.2)
       pdf-core (~> 0.7.0)
       ttfunk (~> 1.5)
-    puma (4.2.1)
+    puma (4.3.0)
       nio4r (~> 2.0)
     rack (2.0.7)
     rack-contrib (2.1.0)
@@ -233,7 +233,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.20.3, < 2.0)
     raindrops (0.19.0)
-    rake (13.0.0)
+    rake (13.0.1)
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
@@ -292,7 +292,7 @@ GEM
       activemodel (>= 6.0.0.a)
       bindex (>= 0.4.0)
       railties (>= 6.0.0.a)
-    webpacker (4.0.7)
+    webpacker (4.1.0)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
       railties (>= 4.2)
