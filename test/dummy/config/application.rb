@@ -13,7 +13,7 @@ require 'sal7711_web'
 module Dummy
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.0
+    config.load_defaults 6.0
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -32,6 +32,8 @@ module Dummy
     config.x.formato_fecha = 'yyyy-mm-dd'
 
     config.x.url_colchon = 'colchon-articulos'
+
+    config.railties_order = [:main_app, Sip::Engine, :all]
 
     config.x.sal7711_presencia_adjunto = true
     config.x.sal7711_presencia_adjuntodesc = true
