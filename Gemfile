@@ -53,11 +53,11 @@ gem 'will_paginate' # Listados en páginas
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git', branch: 'rails6.1'
+  git: 'https://github.com/pasosdeJesus/sip.git'
 #gem 'sip', path: '../sip'
 
 gem 'sal7711_gen',  # Motor de archivo de prensa generico
-  git: 'https://github.com/pasosdeJesus/sal7711_gen.git', branch: 'rails6.1'
+  git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
 #gem 'sal7711_gen', path: '../sal7711_gen'
 
 
