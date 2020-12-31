@@ -25,6 +25,8 @@ gem 'jbuilder' # API JSON facil.
 
 gem 'prawn' # Para generar PDF
 
+gem 'nokogiri', '>=1.11.0.rc4'
+
 gem 'paperclip' # Maneja adjuntos
 
 gem 'pg' # Postgresql
