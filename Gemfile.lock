@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: ad19be76b7c672d289da5ef2182ed7296c5193a3
+  revision: 5dc5f5df6665893a60461cd1db09d5ffbd9e20be
+  branch: main
   specs:
     sal7711_gen (1.0.b3)
       rails
@@ -8,9 +9,10 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 442e2281c33715eb8a135fad10eb9e7f98e4f900
+  revision: 35011fc1824c15c91887e59f71f3336f739ce1fc
+  branch: main
   specs:
-    sip (2.0.b10)
+    sip (2.0.b11)
       cancancan
       chosen-rails
       devise
@@ -129,6 +131,10 @@ GEM
     devise-i18n (1.9.2)
       devise (>= 4.7.1)
     docile (1.3.5)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.14.2)
@@ -292,6 +298,7 @@ DEPENDENCIES
   colorize
   devise
   devise-i18n
+  dotenv-rails
   jbuilder
   meta_request
   nokogiri (>= 1.11.1)
@@ -316,4 +323,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.1.4
+   2.2.3

@@ -31,8 +31,6 @@ gem 'paperclip' # Maneja adjuntos
 
 gem 'pg' # Postgresql
 
-gem 'puma'
-
 gem 'rails', '~>6.0.3.4'
 
 gem 'rails-i18n'
@@ -55,19 +53,26 @@ gem 'will_paginate' # Listados en páginas
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git'
+  git: 'https://github.com/pasosdeJesus/sip.git', branch: :main
 #gem 'sip', path: '../sip'
 
 gem 'sal7711_gen',  # Motor de archivo de prensa generico
-  git: 'https://github.com/pasosdeJesus/sal7711_gen.git'
+  git: 'https://github.com/pasosdeJesus/sal7711_gen.git', branch: :main
 #gem 'sal7711_gen', path: '../sal7711_gen'
 
 
-group :development do
-  
+group :development, :test do
+
   #gem 'byebug' # Depurar
-  
+
   gem 'colorize' # Colores en consola
+  
+  gem 'dotenv-rails'
+end
+
+group :development do
+
+  gem 'puma'
 
   gem 'web-console' # Consola irb en páginas 
 
