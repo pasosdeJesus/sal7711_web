@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 5a00a4ed23d6c94c5d05c96f98dc004dfe6b8f03
-  branch: main
+  revision: 77c2a766c6e0d35aa29b0a3f91f7cdf9618b8da5
+  branch: orgsocial
   specs:
     sal7711_gen (1.0.b3)
       rails
@@ -9,8 +9,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: f611bc10c5a30b305b6e3f478baa3e0fb49f2ec9
-  branch: main
+  revision: 6a796855d962d9f9bf01d7ec9858074667063536
+  branch: orgsocial
   specs:
     sip (2.0.b11)
       cancancan
@@ -283,7 +283,7 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    websocket-driver (0.7.4)
+    websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     will_paginate (3.3.0)
