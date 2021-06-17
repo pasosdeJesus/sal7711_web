@@ -23,11 +23,12 @@ gem 'devise-i18n'
 
 gem 'jbuilder' # API JSON facil. 
 
+gem 'kt-paperclip',                 # Anexos
+  git: 'https://github.com/kreeti/kt-paperclip.git'
+
 gem 'prawn' # Para generar PDF
 
 gem 'nokogiri', '>=1.11.1'
-
-gem 'paperclip' # Maneja adjuntos
 
 gem 'pg' # Postgresql
 
