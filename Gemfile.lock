@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: ab36356a71fe940dde5205269a087a9c8e5feb66
+  revision: 1d18e179c3e97a49268398929ab0a0eca50975bc
   branch: main
   specs:
     sal7711_gen (1.0.b4)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 477fae344516e7021ab150316799406beb4aedd2
+  revision: 1d71b58760f62049d7cee2565b6e38f0b9fb61d5
   branch: main
   specs:
     sip (2.0.b12)
@@ -337,4 +337,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.2.25
+   2.2.28
