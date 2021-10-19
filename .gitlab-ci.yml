@@ -14,6 +14,8 @@ variables:
   POSTGRES_DB: sal7711web_pru
   POSTGRES_HOST_AUTH_METHOD: trust
   NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
+  CC_TEST_REPORTER_ID: "f0239e7db60daaff93f0ff95d67d425cb3c0e7f1582a206d0bb2ff94804725a5"
+
 
 
 stages:
@@ -41,6 +43,9 @@ test:
     - apt-get update -qq && apt-get -o dir::cache::archives="$APT_CACHE_DIR" install -yqq yarn
     - gem install bundler --no-document
     - bundle install --jobs $(nproc) "${FLAGS[@]}"
+    - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+    - chmod +x ./cc-test-reporter
+    - ./cc-test-reporter before-build
     - cd test/dummy
     - cp .env.gitlab .env
     - cp db/structure.sql db/structure.sql.copia 
@@ -50,5 +55,6 @@ test:
     - yarn install
   script:
     - CONFIG_HOSTS=www.example.com bin/rails test
+    - ./cc-test-reporter after-build -t simplecov --exit-code $?
 
 
