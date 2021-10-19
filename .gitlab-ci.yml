@@ -53,6 +53,7 @@ test:
     - bin/rails db:drop db:create db:setup
     - bin/rails sip:indices
     - yarn install
+    - cd ../..
   script:
     - CONFIG_HOSTS=www.example.com bin/rails test
     - ./cc-test-reporter after-build -t simplecov --exit-code $?
