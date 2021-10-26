@@ -1,5 +1,3 @@
-# encoding: UTF-8
-
 Sal7711Web::Engine.routes.draw do
   #get '/casos/filtro' => 'casos#index', as: :casos_filtro
   #post '/casos/filtro' => 'casos#index', as: :envia_casos_filtro

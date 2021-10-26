@@ -1,5 +1,3 @@
-# encoding: UTF-8
-
 require 'sal7711_web/version'
 
 Sip.setup do |config|

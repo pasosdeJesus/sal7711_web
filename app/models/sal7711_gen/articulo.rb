@@ -1,5 +1,3 @@
-# encoding: UTF-8
-
 require 'sal7711_web/concerns/models/articulo'
 
 module Sal7711Gen

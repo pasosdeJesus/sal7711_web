@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 9b4d65f2de03305a6e331260c297cf94ebcb817a
+  revision: cbee5f49f015cc40400ebc8e69d2c45fafa572fb
   branch: main
   specs:
     sal7711_gen (1.0.b4)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: fc24fa659acb8e2a06009496858a5673fadd1655
+  revision: 74b36f4198e6d3530d9130680238bcd4a87b5a5a
   branch: main
   specs:
     sip (2.0.b12)
@@ -288,7 +288,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (6.0.0.rc.5)
+    webpacker (6.0.0.rc.1)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -333,7 +333,7 @@ DEPENDENCIES
   tzinfo
   unicorn
   web-console
-  webpacker (~> 6.0.0.rc.1)
+  webpacker (= 6.0.0.rc.1)
   will_paginate
 
 BUNDLED WITH

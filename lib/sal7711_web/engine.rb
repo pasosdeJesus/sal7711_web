@@ -1,5 +1,3 @@
-# encoding: UTF-8
-
 require 'sal7711_gen/engine'
 
 module Sal7711Web
