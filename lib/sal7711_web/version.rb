@@ -1,3 +1,3 @@
 module Sal7711Web
-  VERSION = "1.0.a3"
+  VERSION = "2.1a1"
 end

@@ -9,7 +9,7 @@ module Sal7711Web
 
         included do
           belongs_to :pais, foreign_key: 'pais_id', validate: true,
-            class_name: 'Sip::Pais'
+            class_name: 'Sip::Pais', optional: false
 
           validates :pagina, presence: false, length: { maximum: 20 } 
         end

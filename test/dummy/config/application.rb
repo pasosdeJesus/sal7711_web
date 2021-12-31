@@ -11,7 +11,7 @@ require 'sal7711_web'
 module Dummy
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.0
+    config.load_defaults 7.0
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -41,6 +41,10 @@ module Dummy
 
     config.relative_url_root = '/sal7711'
 
-    config.hosts << ENV['CONFIG_HOSTS'] || '127.0.0.1'
+    puts "CONFIG_HOSTS="+ENV.fetch('CONFIG_HOSTS', 'defensor.info').to_s
+    config.hosts.concat(
+      ENV.fetch('CONFIG_HOSTS', 'defensor.info').downcase.split(";"))
+
+
   end
 end

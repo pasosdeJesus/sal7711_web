@@ -32,7 +32,7 @@ gem 'nokogiri', '>=1.11.1'
 
 gem 'pg' # Postgresql
 
-gem 'rails', '~> 6.1'
+gem 'rails', '~> 7.0'
   #git: 'https://github.com/rails/rails.git', branch: '6-1-stable'
 
 gem 'rails-i18n'
@@ -55,11 +55,11 @@ gem 'will_paginate' # Listados en páginas
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/sip.git', branch: :rails7jses
 #gem 'sip', path: '../sip'
 
 gem 'sal7711_gen',  # Motor de archivo de prensa generico
-  git: 'https://github.com/pasosdeJesus/sal7711_gen.git', branch: :main
+  git: 'https://github.com/pasosdeJesus/sal7711_gen.git', branch: :rails7jses
 #gem 'sal7711_gen', path: '../sal7711_gen'
 
 
