@@ -37,3 +37,4 @@ test/dummy/public/sal7711/assets/
 coverage
 .env
 test/dummy/public/packs/
+test/dummy/app/assets/builds
