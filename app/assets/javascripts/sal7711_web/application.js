@@ -15,10 +15,9 @@
 //= require sal7711_web/motor
 //= require_tree .
 
-document.addEventListener('turbolinks:load', function() {
+document.addEventListener('turbo:load', function() {
 	var root;
-	root = typeof exports !== "undefined" && exports !== null ? 
-		exports : window;
+	root = window;
 	sip_prepara_eventos_comunes(root, true);
 	sal7711_gen_prepara_eventos_comunes(root);
 	sal7711_web_prepara_eventos_comunes(root);
