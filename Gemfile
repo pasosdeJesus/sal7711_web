@@ -72,7 +72,7 @@ gem 'sal7711_gen',  # Motor de archivo de prensa generico
 
 group :development, :test do
 
-  #gem 'byebug' # Depurar
+  gem 'debug' # Depurar
 
   gem 'colorize' # Colores en consola
   
