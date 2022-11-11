@@ -89,15 +89,13 @@ end
 
 
 group :test do
-  gem 'capybara',
-    git: 'https://github.com/teamcapybara/capybara.git', branch: :master
+  gem 'capybara'
 
   gem 'cuprite'
 
   gem 'simplecov', '<0.18'  # Debido a https://github.com/codeclimate/test-reporter/issues/418
 
   gem 'spring' # Acelera ejecutando en fondo.  https://github.com/jonleighton/spring
-
 end
 
 
