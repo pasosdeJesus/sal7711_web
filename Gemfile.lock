@@ -10,31 +10,33 @@ GIT
       terrapin (~> 0.6.0)
 
 GIT
-  remote: https://github.com/pasosdeJesus/sal7711_gen.git
-  revision: 4b422f42ae07b6ccb23572f1301e0d1d9cebccfc
+  remote: https://github.com/pasosdeJesus/msip.git
+  revision: 0bd8237429dbef8fc3e4148a91c7d4acd479dde7
   branch: main
   specs:
-    sal7711_gen (2.1.0.beta1)
-      rails
-      sip
+    msip (2.2.0.alfa3)
+      cancancan (~> 3)
+      devise (~> 4)
+      devise-i18n (~> 1)
+      kt-paperclip (~> 7)
+      pg (~> 1)
+      rails (~> 7.0)
+      rails-i18n (~> 7)
+      sassc-rails (~> 2)
+      simple_form (~> 5)
+      sprockets-rails (~> 3)
+      stimulus-rails (~> 1)
+      twitter_cldr (~> 6)
+      will_paginate (~> 3)
 
 GIT
-  remote: https://github.com/pasosdeJesus/sip.git
-  revision: 554c4eab9b3c6afca9917f35ad915b6095878deb
-  branch: main
+  remote: https://github.com/pasosdeJesus/sal7711_gen.git
+  revision: d14ac929f23975058576df5c083fc1fce12883a1
+  branch: msip
   specs:
-    sip (2.1.0.beta1)
-      cancancan
-      coffee-rails
-      devise
-      devise-i18n
-      kt-paperclip
-      minitest
+    sal7711_gen (2.1.0.beta1)
+      msip
       rails
-      rails-i18n
-      sassc-rails
-      simple_form
-      twitter_cldr
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
@@ -156,6 +158,7 @@ GEM
     cuprite (0.14.3)
       capybara (~> 3.0)
       ferrum (~> 0.13.0)
+    date (3.3.1)
     debug (1.7.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
@@ -185,7 +188,7 @@ GEM
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     io-console (0.5.11)
-    irb (1.5.1)
+    irb (1.6.0)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
@@ -212,7 +215,8 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.16.3)
     msgpack (1.6.0)
-    net-imap (0.3.1)
+    net-imap (0.3.2)
+      date
       net-protocol
     net-pop (0.1.2)
       net-protocol
@@ -356,6 +360,7 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   kt-paperclip!
+  msip!
   nokogiri (>= 1.11.1)
   pg
   prawn
@@ -367,7 +372,6 @@ DEPENDENCIES
   sassc-rails
   simple_form
   simplecov (< 0.18)
-  sip!
   spring
   sprockets-rails
   stimulus-rails

@@ -1,6 +1,6 @@
 require 'sal7711_web/version'
 
-Sip.setup do |config|
+Msip.setup do |config|
       config.ruta_anexos = "#{Rails.root}/archivos/anexos"
       config.ruta_volcados = "#{Rails.root}/archivos/bd"
       # En heroku los anexos son super-temporales

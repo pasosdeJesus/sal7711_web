@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require sip/motor
+//= require msip/motor
 //= require sal7711_gen/motor
 //= require sal7711_web/motor
 //= require_tree .
@@ -18,7 +18,7 @@
 document.addEventListener('turbo:load', function() {
 	var root;
 	root = window;
-	sip_prepara_eventos_comunes(root, true);
+	msip_prepara_eventos_comunes(root, true);
 	sal7711_gen_prepara_eventos_comunes(root);
 	sal7711_web_prepara_eventos_comunes(root);
 	sal7711_web_prepara_eventos_unicos(root);

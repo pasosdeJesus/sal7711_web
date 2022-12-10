@@ -31,7 +31,7 @@ module Dummy
 
     config.x.url_colchon = 'colchon-articulos'
 
-    config.railties_order = [:main_app, Sip::Engine, :all]
+    config.railties_order = [:main_app, Msip::Engine, :all]
 
     config.x.sal7711_presencia_adjunto = true
     config.x.sal7711_presencia_adjuntodesc = true
