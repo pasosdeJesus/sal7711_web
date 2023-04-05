@@ -48,7 +48,7 @@ GIT
 PATH
   remote: .
   specs:
-    sal7711_web (2.2.0.beta1)
+    sal7711_web (2.2.0.beta2)
       rails
       sal7711_gen
 
