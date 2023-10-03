@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 76a5fc04d1c6d26e52d4f15e1e0c68b499f96db2
+  revision: 5acca0ef5c97b547155025ee23a0a7833ce0641b
   branch: main
   specs:
     msip (2.2.0.beta4)
@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 9ca2f5826a4d82756e075535aa2dcc4179e80330
+  revision: 9c80c04cdb1a4ae7c553d15138319ef33e20e875
   branch: main
   specs:
     sal7711_gen (2.2.0.beta4)
@@ -168,7 +168,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    devise-i18n (1.11.0)
+    devise-i18n (1.11.1)
       devise (>= 4.9.0)
     docile (1.4.0)
     dotenv (2.8.1)
@@ -182,7 +182,7 @@ GEM
       concurrent-ruby (~> 1.1)
       webrick (~> 1.7)
       websocket-driver (>= 0.6, < 0.8)
-    ffi (1.15.5)
+    ffi (1.16.2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -345,7 +345,7 @@ GEM
     will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.6.11)
+    zeitwerk (2.6.12)
 
 PLATFORMS
   x86_64-openbsd
@@ -391,4 +391,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.4.19
+   2.4.20
