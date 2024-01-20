@@ -1,4 +1,3 @@
-require 'msip/application_controller'
 
 class ApplicationController < Msip::ApplicationController
   # Prevent CSRF attacks by raising an exception.
