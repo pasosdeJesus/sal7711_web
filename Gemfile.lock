@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: b4916ff97261dd5790dd1efe5e471abc301460d3
-  branch: main
+  revision: 4f69c9edb506dbe9482e0dc99837f6a0edd5ffe9
+  branch: v2.2
   specs:
     msip (2.2.0.beta5)
       cancancan (~> 3)
@@ -38,8 +38,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: 0eb9d8d31af8e6921e76ea4451647f8b6c76dc41
-  branch: main
+  revision: 40d7ea40ff0018152fea0e6aa9102e4fa389fd3f
+  branch: v2.2
   specs:
     sal7711_gen (2.2.0.beta4)
       msip
@@ -131,6 +131,8 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    ansi (1.5.0)
+    ast (2.4.2)
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
@@ -141,7 +143,12 @@ GEM
     bindex (0.8.1)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
+    brakeman (6.1.2)
+      racc
     builder (3.2.4)
+    bundler-audit (0.9.1)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
     camertron-eprun (1.1.1)
     cancancan (3.5.0)
     capybara (3.40.0)
@@ -153,8 +160,11 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    choice (0.2.0)
     cldr-plurals-runtime-rb (1.1.0)
     climate_control (1.2.0)
+    code-scanning-rubocop (0.6.1)
+      rubocop (~> 1.0)
     coffee-rails (5.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 5.2.0)
@@ -170,10 +180,10 @@ GEM
       capybara (~> 3.0)
       ferrum (~> 0.14.0)
     date (3.3.4)
-    debug (1.9.1)
+    debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
-    devise (4.9.3)
+    devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
@@ -209,7 +219,9 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.3.0)
       railties (>= 6.0.0)
+    json (2.7.2)
     kgio (2.11.4)
+    language_server-protocol (3.17.0.3)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -226,6 +238,11 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.5)
     minitest (5.21.2)
+    minitest-reporters (1.6.1)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     msgpack (1.7.2)
     mutex_m (0.2.0)
     net-imap (0.4.9.1)
@@ -235,13 +252,17 @@ GEM
       net-protocol
     net-protocol (0.2.2)
       timeout
-    net-smtp (0.4.0.1)
+    net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.16.2)
+    nokogiri (1.16.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    parallel (1.24.0)
+    parser (3.3.0.5)
+      ast (~> 2.4.1)
+      racc
     pdf-core (0.9.0)
     pg (1.5.6)
     prawn (2.4.0)
@@ -253,7 +274,7 @@ GEM
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.3)
-    rack (2.2.8.1)
+    rack (2.2.9)
     rack-session (1.0.2)
       rack (< 3)
     rack-test (2.1.0)
@@ -279,6 +300,11 @@ GEM
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
+    rails-erd (1.7.2)
+      activerecord (>= 4.2)
+      activesupport (>= 4.2)
+      choice (~> 0.2.0)
+      ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
@@ -293,6 +319,7 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
+    rainbow (3.1.1)
     raindrops (0.20.1)
     rake (13.1.0)
     rdoc (6.6.2)
@@ -303,6 +330,33 @@ GEM
     responders (3.1.1)
       actionpack (>= 5.2)
       railties (>= 5.2)
+    rexml (3.2.6)
+    rubocop (1.63.2)
+      json (~> 2.3)
+      language_server-protocol (>= 3.17.0)
+      parallel (~> 1.10)
+      parser (>= 3.3.0.2)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.31.1, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 2.4.0, < 3.0)
+    rubocop-ast (1.31.2)
+      parser (>= 3.3.0.4)
+    rubocop-minitest (0.35.0)
+      rubocop (>= 1.61, < 2.0)
+      rubocop-ast (>= 1.31.1, < 2.0)
+    rubocop-rails (2.24.1)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.33.0, < 2.0)
+      rubocop-ast (>= 1.31.1, < 2.0)
+    rubocop-shopify (2.15.1)
+      rubocop (~> 1.51)
+    ruby-graphviz (1.2.5)
+      rexml
+    ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -321,7 +375,7 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    spring (4.1.3)
+    spring (4.2.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -348,6 +402,7 @@ GEM
       tzinfo
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    unicode-display_width (2.5.0)
     unicorn (6.1.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
@@ -375,11 +430,14 @@ DEPENDENCIES
   bcrypt
   bigdecimal
   bootsnap (>= 1.1.0)
+  brakeman
+  bundler-audit
   cancancan
-  capybara
   cocoon!
+  code-scanning-rubocop
   coffee-rails
   colorize
+  connection_pool
   cuprite
   debug
   devise
@@ -388,14 +446,21 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   kt-paperclip!
+  matrix
+  minitest-reporters
   msip!
+  net-smtp
   nokogiri (>= 1.11.1)
   pg
   prawn
   puma
   rack (~> 2)
   rails (>= 7.1, < 7.2)
+  rails-erd
   rails-i18n
+  rubocop-minitest
+  rubocop-rails
+  rubocop-shopify
   sal7711_gen!
   sal7711_web!
   sassc-rails
@@ -412,4 +477,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.5.6
+   2.5.9

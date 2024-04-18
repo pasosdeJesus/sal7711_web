@@ -10,30 +10,35 @@ gem "bcrypt"
 
 gem "bigdecimal"
 
-gem "bootsnap", ">=1.1.0", require: false
+gem "bootsnap",  ">=1.1.0", require: false
 
 gem "cancancan"
 
-gem "cocoon", git: "https://github.com/vtamara/cocoon.git", branch: "new_id_with_ajax" # Formularios anidados (algunos con ajax)
+gem "cocoon", git: "https://github.com/vtamara/cocoon.git",
+  branch: "new_id_with_ajax" # Formularios anidados (algunos con ajax)
 
-gem "coffee-rails" # CoffeeScript para recuersos .js.coffee y vistas
+gem "coffee-rails"# CoffeeScript para recuersos .js.coffee y vistas
 
 gem "devise" # Autenticación 
 
 gem "devise-i18n"
 
-gem "jbuilder" # API JSON facil. 
+gem "jbuilder" # API JSON facil. Ver: https://github.com/rails/jbuilder
 
 gem "jsbundling-rails"
 
 gem "kt-paperclip",                 # Anexos
   git: "https://github.com/kreeti/kt-paperclip.git"
 
-gem "prawn" # Para generar PDF
+gem "matrix" # requerido por ruby 3.1
+
+gem "net-smtp" # requerido por ruby 3.1
 
 gem "nokogiri", ">=1.11.1"
 
 gem "pg" # Postgresql
+
+gem "prawn" # Para generar PDF
 
   gem "rack", "~> 2"
 
@@ -58,28 +63,41 @@ gem "tzinfo" # Zonas horarias
 
 gem "will_paginate" # Listados en páginas
 
-
 #####
 # Motores que se sobrecargan vistas (deben ponerse en orden de apilamiento 
-# lógico y no alfabetico como las gemas anteriores) 
+# lógico y no alfabetico como las gemas anteriores)
 
 gem "msip", # Motor generico
-  git: "https://gitlab.com/pasosdeJesus/msip.git", branch: "main"
-#gem "msip", path: "../msip"
+  git: "https://gitlab.com/pasosdeJesus/msip.git", branch: "v2.2"
+  #path: "../msip-2.2"
 
-gem "sal7711_gen",  # Motor de archivo de prensa generico
-  git: "https://gitlab.com/pasosdeJesus/sal7711_gen.git", branch: "main"
-#gem "sal7711_gen", path: "../sal7711_gen"
-
+gem "sal7711_gen", # Motor generico
+  git: "https://gitlab.com/pasosdeJesus/sal7711_gen.git", branch: "v2.2"
+  # path: "../sal7711_gen-2.2"
 
 group :development, :test do
+  gem "brakeman"
 
-  gem "debug" # Depurar
+  gem "bundler-audit"
 
-  gem "colorize" # Colores en consola
-  
+  gem "code-scanning-rubocop"
+
+  gem "colorize"
+
+  gem "debug"
+
   gem "dotenv-rails"
+
+  gem "rails-erd"
+
+  gem "rubocop-minitest"
+
+  gem "rubocop-rails"
+
+  gem "rubocop-shopify"
 end
+
+
 
 group :development do
 
@@ -91,13 +109,16 @@ end
 
 
 group :test do
-  gem "capybara"
-
   gem "cuprite"
+
+  gem "connection_pool"
+ 
+  gem "minitest-reporters" 
 
   gem "simplecov"
 
-  gem "spring" # Acelera ejecutando en fondo.  https://github.com/jonleighton/spring
+  gem "spring" # Acelera ejecutando en fondo
+
 end
 
 
@@ -106,4 +127,5 @@ group :production do
   gem "unicorn" # Para despliegue
 
 end
+
 

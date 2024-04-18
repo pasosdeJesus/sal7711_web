@@ -7,5 +7,5 @@ Este es un motor de Sal7711 con referencias a documentos web
 
 Aplican practicamente las instrucciones que para otro motor genérico en el que
 este se basa:
-	https://github.com/pasosdeJesus/sal7711_gen
+	https://gitlab.com/pasosdeJesus/sal7711_gen
 
