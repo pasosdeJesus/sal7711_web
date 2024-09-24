@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 5435b2db2b536198bdee3dfa37ea281bc6b26e68
+  revision: cb2ca677c79f8f386ad45819fd59b0196a1dd04b
   branch: v2.2
   specs:
     msip (2.2.0.beta6)
@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/sal7711_gen.git
-  revision: d406a955714c238e224bc8cff041095dac150a58
+  revision: 5b01aa6e2f93146f5ec4ed050cd1116f130056e3
   branch: v2.2
   specs:
     sal7711_gen (2.2.0.beta6)
@@ -347,7 +347,7 @@ GEM
     rubocop-minitest (0.36.0)
       rubocop (>= 1.61, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
-    rubocop-rails (2.26.1)
+    rubocop-rails (2.26.2)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.52.0, < 2.0)
